@@ -1,0 +1,57 @@
+上传文件
+git init
+
+git add .
+ 
+git commit -m 'first commit'  #远程仓库名
+
+git remote add origin  https://gitee.com/pan_jun_an/test1.git
+
+git push origin master
+
+下载文件
+git remote add origin https://gitee.com/pan_jun_an/test1.git
+git pull origin master
+
+
+在项目根目录下有package.json文件,你只要把package.json放上去,然后通过运行npm install,就可以自动建立node_modules,而且这个新建立的库和之前自己的是一样的。也就是说通过管理package.json就可以了。
+
+============后端
+
+uwsgi --reload uwsgi.pid          # 重启
+uwsgi --stop uwsgi.pid            # 关闭
+
+
+关闭uwigs进程
+sudo fuser -k 5000/tcp
+uwsgi --ini uwsgi.ini    （需要在 workon test_env后，即需要先开虚拟环境，得在flask_deploy外面的那个目录运行，即在test目录下）
+# 启动
+
+
+
+
+==========前端
+cd /srv/test1 下面
+
+nginx目录 cd /usr/share/nginx/html
+npm run build 生成的是admin 不是dist
+
+mv 文件夹名1/ 文件夹名2   相当于该文件夹名
+zip -r html.zip html 把html文件夹打包
+
+
+ service nginx status 查看nginx是否启动
+service nginx restart重启/start启动
+service nginx start
+
+service nginx stop
+
+nginx -t 查看它的目录
+nginx的目录/etc/nginx/nginx.conf
+
+/etc/nginx/sites-enabled/default 文件
+
+
+client_max_body_size 10m; 修改最大量 否则错
+
+cat /var/log/nginx/xxx.error.log 
